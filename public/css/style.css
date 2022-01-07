@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+    --yellow: #EAC926;
+    --blue: #03264C;
+    --ligthBlue: #1259c3;
+    --darkGrey: #666;
+    --ligthGrey: #ebebeb;
+    --green: #39b54a;
+    /*  Fonts */
+    --font-primary: 'Roboto', sans-serif;
+    /* Font size */
+    --paragraph: 12px;
+    --title: 24px;
+    --prices: 18px;
+    --descriptions: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    margin-bottom: -20px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+body {
+    font-family: (var(--font-primary));
+}
+
+p {
+    font-family: var(--font-primary);
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--yellow);
+    padding-bottom: 20px;
+    font-size: var(--paragraph);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    padding-top: 25px;
+    padding-left: 25px;
+    width: 150px;
+}
+
+header .burger-menu {
+    background-color: var(--ligthBlue);
+    border-radius: 7px;
+    color: var(--ligthGrey);
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 37px;
+    padding: 11px 0;
+    font-size: 16px;
+
+}
+
+header .burger-menu {
+    margin-top: 9px;
+}
+
+header .dues {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search-bar input {
+    margin-left: 15px;
+}
+
+.pb-15 {
+    padding-bottom: 15px;
+}
+
+nav {
+    display: none;
+}
+
+/* Main */
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main section h3{
+    color: var(--darkGrey);
+    font-family: var(--font-primary);
+}
+
+main section article {
+    margin: 10px;
+    padding: 15px;
+}
+
+main section article .descriptionCard {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+main section article .truck {
+    width: 100%;
+    text-align: end;
+}
+
+main section article .precio {
+    display: inline-flex;
+    font-size: var(--prices);
+    width: 30%;
+
+}
+
+main section article .off {
+    display: inline;
+    color: #39b54a;
+    font-size: var(--paragraph);
+    width: 70%;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+
+
+main section article i {
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+}
+
+main section article h5 {
+    display: none;
+}
+
+/* FOOTER */
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+footer .copy {
+    color: var(--darkGrey);
+    font-size: var(--paragraph);
+    text-align: left;
+    padding-left: 15px;
+}
+
+footer i {
+    font-size: 2em;
+    color: var(--ligthBlue);
+    margin-bottom: 10px;
+}
+
+footer h4 {
+    font-size: var(--descriptions);
+}
+
+footer p {
+    font-size: var(--paragraph);
+    padding: 0px 30px 30px 30px;
+}
+
+/* Tablet */
+@media screen and (min-width: 361px) {
+
+    /* Header */
+    header .burger-menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    /* Main */
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section article h5 {
+        display: block;
+        color: var(--darkGrey);
+        font-size: var(--descriptions);
+        font-weight: lighter;
+        padding: 10px 0;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {}
